@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/bg_music_musicplay">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/y80"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="60px"
+        android:layout_marginLeft="@dimen/x50"
+        android:padding="20px"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_music_back" />
+
+    <TextView
+        android:id="@+id/tvMainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60px"
+        android:text="歌曲识别"
+        android:textColor="@color/color_ffffff"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tvSongName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMainTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:maxWidth="600px"
+        android:textColor="@color/color_ffffff"
+        android:textSize="30px"
+        tools:text="告白气球" />
+
+    <TextView
+        android:id="@+id/tvArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSongName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:textColor="@color/color_4dffffff"
+        android:textSize="20px"
+        tools:text="周杰伦" />
+
+    <RelativeLayout
+        android:id="@+id/musicCoverBord"
+        android:layout_width="@dimen/x400"
+        android:layout_height="@dimen/y400"
+        android:layout_below="@+id/tvArtist"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/shape_music_cover_bord">
+
+        <FrameLayout
+            android:layout_width="@dimen/x400"
+            android:layout_height="@dimen/y400"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/ivListen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_music_onlinemusic_identify_success" />
+
+            <ProgressBar
+                android:id="@+id/pbSearch"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/ic_progress_large"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivPlayState"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_music_musicplay_played"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/pbBuffer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminateDrawable="@drawable/ic_progress_buffer"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <net.imoran.auto.music.widgets.progress.CircleProgress
+            android:id="@+id/progressView"
+            android:layout_width="350px"
+            android:layout_height="350px"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            app:animTime="0"
+            app:antiAlias="true"
+            app:arcColors="@color/color_progress_music"
+            app:arcWidth="@dimen/x4"
+            app:bgArcColor="@color/transparent"
+            app:bgArcWidth="@dimen/x4"
+            app:hint=""
+            app:hintSize="@dimen/text_size_25"
+            app:maxValue="100"
+            app:startAngle="270"
+            app:sweepAngle="360"
+            app:unit=""
+            app:unitSize="@dimen/text_size_25"
+            app:value="0"
+            app:valueSize="1sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/musicCoverBord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90px"
+        android:text="正在识别中"
+        android:textColor="@color/color_ffffff"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tvTipStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:text="点击屏幕暂停识别"
+        android:textColor="#33ffffff"
+        android:textSize="24px" />
+
+    <ImageView
+        android:id="@+id/ivStart"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:layout_below="@+id/musicCoverBord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/x126"
+        android:layout_marginTop="@dimen/y40"
+        android:src="@drawable/selector_music_star"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+

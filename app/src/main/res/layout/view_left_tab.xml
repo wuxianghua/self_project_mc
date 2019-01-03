@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="120px"
+    android:layout_height="match_parent"
+    tool:background="@drawable/bg_music_musicplay">
+
+    <LinearLayout
+        android:layout_width="120px"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <net.imoran.auto.music.widgets.TabItemView
+            android:id="@+id/tabNet"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            app:icon_select="@drawable/ic_music_leftbar_musicplay_selected"
+            app:icon_un_select="@drawable/ic_music_leftbar_musicplay_normal"
+            app:select="true"
+            app:text="网络音乐" />
+
+        <net.imoran.auto.music.widgets.TabItemView
+            android:id="@+id/tabRadio"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            app:icon_select="@drawable/ic_music_leftbar_radio_selected"
+            app:icon_un_select="@drawable/ic_music_leftbar_radio_normal"
+            app:select="false"
+            app:text="电台" />
+
+        <net.imoran.auto.music.widgets.TabItemView
+            android:id="@+id/tabSound"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            app:icon_select="@drawable/ic_music_leftbar_local_talkingbook_selected"
+            app:icon_un_select="@drawable/ic_music_leftbar_local_talkingbook"
+            app:select="false"
+            app:text="有声节目" />
+
+        <net.imoran.auto.music.widgets.TabItemView
+            android:id="@+id/tabLocal"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            app:icon_select="@drawable/ic_music_leftbar_local_normal_selected"
+            app:icon_un_select="@drawable/ic_music_leftbar_local_normal"
+            app:select="false"
+            app:text="本地音乐" />
+
+        <net.imoran.auto.music.widgets.TabItemView
+            android:id="@+id/tabBlue"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            app:icon_select="@drawable/ic_music_leftbar_external_selected"
+            app:icon_un_select="@drawable/ic_music_leftbar_external_normal"
+            app:select="false"
+            app:text="蓝牙音乐" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_sidebar_shadow" />
+</FrameLayout>

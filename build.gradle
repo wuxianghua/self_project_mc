@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+
+        // bugly 平台
+        classpath 'com.tencent.bugly:symtabfileuploader:latest.release'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+
+        // 私有仓库地址
+        maven {
+            url 'http://47.95.32.94:8081/repository/maven-releases/'
+        }
+
+        maven {
+            url 'http://47.95.32.94:8081/repository/maven-snapshots/'
+        }
+
+        mavenLocal()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+
+
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << '-Xbootclasspath/p:app/libs/classes_mtk.jar'
+            options.compilerArgs << '-Xbootclasspath/p:app/libs/classes_android.jar'
+        }
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

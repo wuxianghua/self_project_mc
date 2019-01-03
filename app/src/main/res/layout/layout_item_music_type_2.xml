@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y60"
+    tools:background="@drawable/bg_music_musicplay">
+
+    <TextView
+        android:id="@+id/musicTypeName"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y40"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_item_music_type"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#99ffffff"
+        android:textSize="20px"
+        tools:text="华语" />
+
+    <ImageView
+        android:id="@+id/musicTypeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

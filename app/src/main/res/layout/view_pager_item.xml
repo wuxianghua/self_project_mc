@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/musicCoverBord"
+    android:layout_width="@dimen/y430"
+    android:layout_height="@dimen/y430"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    tool:background="@drawable/bg_music_musicplay">
+
+    <ImageView
+        android:layout_width="426px"
+        android:layout_height="426px"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/shape_music_cover_bord" />
+
+    <net.imoran.auto.music.widgets.progress.CircleProgress
+        android:id="@+id/progressView"
+        android:layout_width="426px"
+        android:layout_height="426px"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:animTime="0"
+        app:antiAlias="true"
+        app:arcColors="@color/color_progress_music"
+        app:arcWidth="@dimen/x4"
+        app:bgArcColor="@color/transparent"
+        app:bgArcWidth="@dimen/x4"
+        app:hint=""
+        app:hintSize="@dimen/text_size_25"
+        app:maxValue="10000"
+        app:startAngle="270"
+        app:sweepAngle="360"
+        app:unit=""
+        app:unitSize="@dimen/text_size_25"
+        app:value="1"
+        app:valueSize="1sp" />
+
+    <ImageView
+        android:id="@+id/ivMusicCover"
+        android:layout_width="@dimen/x400"
+        android:layout_height="@dimen/y400"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_music_musicplay_default" />
+
+    <FrameLayout
+        android:layout_width="@dimen/x140"
+        android:layout_height="@dimen/x140"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/ivPlayState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_music_musicplay_stop" />
+
+        <ProgressBar
+            android:id="@+id/pbBuffer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/ic_progress_buffer"
+            android:visibility="invisible" />
+    </FrameLayout>
+</FrameLayout>

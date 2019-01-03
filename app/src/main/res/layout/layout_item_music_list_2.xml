@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y70"
+    android:orientation="horizontal"
+    tools:background="#000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/x32"
+            android:layout_height="@dimen/y32"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x28">
+
+            <ImageView
+                android:id="@+id/musicStatusIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/singOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@drawable/selector_play_list_color"
+                android:textSize="20px"
+                tools:text="1" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="@dimen/x220"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x60"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@drawable/selector_play_list_color_2"
+            android:textSize="24px"
+            tools:text="心中的日月" />
+
+
+        <TextView
+            android:id="@+id/singerName"
+            android:layout_width="@dimen/x95"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x105"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@drawable/selector_play_list_color"
+            android:textSize="20px"
+            tools:text="心中的日月" />
+
+        <TextView
+            android:id="@+id/songTime"
+            android:layout_width="@dimen/x105"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x95"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@drawable/selector_play_list_color"
+            android:textSize="20px"
+            tools:text="03:40" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_line_aaaaaa_bottom" />
+
+</RelativeLayout>

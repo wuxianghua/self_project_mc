@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">车载音乐</string>
+    <string name="data_null">抱歉，没有获取到数据</string>
+    <string name="net_music">网络音乐</string>
+    <string name="radio_music">电台</string>
+    <string name="audio_show_music">有声节目</string>
+    <string name="local_music">本地音乐</string>
+    <string name="out_music">蓝牙音乐</string>
+    <string name="history_record">搜索历史</string>
+    <string name="clear_history_record">清空所有历史记录</string>
+
+</resources>

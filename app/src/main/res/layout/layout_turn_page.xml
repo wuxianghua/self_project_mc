@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlPageContainer"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y125"
+    tools:showIn="@layout/layout_search_result">
+
+    <TextView
+        android:id="@+id/lastPage"
+        android:layout_width="@dimen/x144"
+        android:layout_height="@dimen/y54"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x120"
+        android:background="@drawable/selector_button_turn_page"
+        android:gravity="center"
+        android:text="上一页"
+        android:textColor="@drawable/selector_button_turn_page_color"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/currentPage"
+        android:layout_width="@dimen/x144"
+        android:layout_height="@dimen/y54"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/x120"
+        android:gravity="center"
+        android:textColor="#99ffffff"
+        android:textSize="24px"
+        tools:text="1/3" />
+
+    <TextView
+        android:id="@+id/nextPage"
+        android:layout_width="@dimen/x144"
+        android:layout_height="@dimen/y54"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x120"
+        android:layout_marginRight="@dimen/x114"
+        android:background="@drawable/selector_button_turn_page"
+        android:gravity="center"
+        android:text="下一页"
+        android:textColor="@drawable/selector_button_turn_page_color"
+        android:textSize="20px" />
+</RelativeLayout>

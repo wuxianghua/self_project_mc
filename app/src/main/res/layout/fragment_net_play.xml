@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentNetMusic"
+    android:layout_width="@dimen/x840"
+    android:layout_height="match_parent"
+    tools:background="@drawable/bg_music_musicplay">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y260"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x60"
+        android:paddingRight="@dimen/x60"
+        android:paddingTop="@dimen/y40">
+
+        <ImageView
+            android:id="@+id/ivMusicLib"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/y80"
+            android:padding="20px"
+            android:src="@drawable/ic_music_musiclibrary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/x400"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/musicCoverBord"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvSongName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="30px"
+                    tools:text="LAST DANCE" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAlbumSinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:singleLine="true"
+                android:textColor="#4dffffff"
+                android:textSize="20px"
+                tools:text="LAST DANCE/BIGBANG" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y30"
+                android:layout_marginTop="@dimen/y20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#4dffffff"
+                    android:textSize="20px"
+                    tools:text="华语" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y20"
+                    android:singleLine="true"
+                    android:textColor="#4dffffff"
+                    android:textSize="20px"
+                    tools:text="流行" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y20"
+                    android:singleLine="true"
+                    android:textColor="#4dffffff"
+                    android:textSize="20px"
+                    tools:text="男歌手" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivMusicSearch"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/y80"
+            android:padding="20px"
+            android:src="@drawable/selector_music_search" />
+    </LinearLayout>
+
+    <net.imoran.auto.music.widgets.MusicPlayView
+        android:id="@+id/musicPlayView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y430"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvLyrics"
+        android:layout_width="@dimen/x400"
+        android:layout_height="@dimen/y20"
+        android:layout_below="@+id/musicPlayView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        android:gravity="center|bottom"
+        android:singleLine="true"
+        android:textColor="#99ffffff"
+        android:textSize="20px"
+        tools:text="LAST DANCE" />
+
+    <ImageView
+        android:id="@+id/ivStart"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/y60"
+        android:layout_marginLeft="@dimen/x126"
+        android:src="@drawable/selector_music_star" />
+
+    <ImageView
+        android:id="@+id/ivRepeatMode"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/y60"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_toRightOf="@+id/ivStart"
+        android:src="@drawable/ic_music_musicplay_listcycle"
+        android:tag="2" />
+
+    <ImageView
+        android:id="@+id/ivAcr"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/y60"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_toRightOf="@+id/ivRepeatMode"
+        android:src="@drawable/ic_music_musicplay_knowvoice" />
+
+    <ImageView
+        android:id="@+id/ivPlayList"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/y60"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_toRightOf="@+id/ivAcr"
+        android:src="@drawable/selector_music_list" />
+
+    <ImageView
+        android:layout_width="@dimen/x100"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_music_shadow_left" />
+
+    <ImageView
+        android:layout_width="@dimen/x100"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_music_shadow_right" />
+
+    <TextView
+        android:id="@+id/perv"
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/y430"
+        android:layout_below="@+id/title"
+        android:background="@color/transparent" />
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="@dimen/x130"
+        android:layout_height="@dimen/y430"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:background="@color/transparent" />
+
+    <net.imoran.auto.music.widgets.LoadingErrorView
+        android:id="@+id/loadingErrorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>
+

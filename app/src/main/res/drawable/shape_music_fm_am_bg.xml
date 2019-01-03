@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 设置一个黑色边框 -->
+    <solid android:color="#0dffffff" />
+
+    <corners android:radius="@dimen/x10" />
+
+</shape>

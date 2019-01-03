@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@drawable/bg_music_musicplay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y240"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_marginRight="@dimen/x60"
+        android:layout_marginTop="@dimen/y80"
+        android:background="@drawable/shape_music_radio_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x60">
+
+            <TextView
+                android:id="@+id/tvFm"
+                android:layout_width="@dimen/x100"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_radio_fm"
+                android:gravity="center"
+                android:text="FM"
+                android:textColor="@drawable/selector_music_radio_fm_am_color"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tvAm"
+                android:layout_width="@dimen/x100"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_radio_am"
+                android:gravity="center"
+                android:text="AM"
+                android:textColor="@drawable/selector_music_radio_fm_am_color"
+                android:textSize="30px" />
+
+            <LinearLayout
+                android:layout_width="@dimen/x260"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_music_fm_am_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvRadioValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="40px"
+                    tools:text="FM100.4" />
+
+                <ImageView
+                    android:id="@+id/ivRadioStar"
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/y40"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_toRightOf="@+id/radioValue"
+                    android:background="@drawable/selector_radio_star" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y105"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/bg_miusic_transceiver_indicator" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40px"
+        android:maxWidth="@dimen/x580"
+        android:textColor="@color/color_ffffff"
+        android:textSize="28px"
+        tools:text="动感101 - 音乐早餐" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        android:maxWidth="@dimen/x580"
+        android:textColor="@color/color_33ffffff"
+        android:textSize="24px"
+        tools:text="周杰伦告白气球" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y140"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y40"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivPreviousRadio"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x120"
+            android:src="@drawable/ic_music_transceiver_last" />
+
+        <ImageView
+            android:id="@+id/ivRadioPlay"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/y140"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/leftRadio"
+            android:src="@drawable/selector_radio_play_state" />
+
+
+        <ImageView
+            android:id="@+id/ivNextRadio"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x120"
+            android:layout_toRightOf="@+id/rlRadioState"
+            android:src="@drawable/ic_music_transceiver_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y52"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/y2"
+            android:background="#99ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:text="我喜欢的"
+            android:textColor="#99ffffff"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/y2"
+            android:background="#99ffffff" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/glStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x40"
+        android:columnCount="3">
+
+        <net.imoran.auto.music.widgets.RadioStarView
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y60" />
+
+        <net.imoran.auto.music.widgets.RadioStarView
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y60"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginRight="@dimen/x50" />
+
+        <net.imoran.auto.music.widgets.RadioStarView
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y60" />
+
+        <net.imoran.auto.music.widgets.RadioStarView
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y60"
+            android:layout_marginTop="@dimen/x40" />
+
+        <net.imoran.auto.music.widgets.RadioStarView
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y60"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginRight="@dimen/x50"
+            android:layout_marginTop="@dimen/x40" />
+
+        <net.imoran.auto.music.widgets.RadioStarView
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y60"
+            android:layout_marginTop="@dimen/x40" />
+    </GridLayout>
+</LinearLayout>

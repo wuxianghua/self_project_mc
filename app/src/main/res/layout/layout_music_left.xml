@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/x120"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_music_player">
+
+    <LinearLayout
+        android:id="@+id/leftMusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:layout_marginTop="-2px"
+            android:background="@color/color_play_top_line" />
+
+        <include
+            android:id="@+id/netMusic"
+            layout="@layout/item_music_left" />
+
+
+        <include
+            android:id="@+id/radioMusic"
+            layout="@layout/item_music_left" />
+
+        <include
+            android:id="@+id/audioShowMusic"
+            layout="@layout/item_music_left" />
+
+        <include
+            android:id="@+id/localMusic"
+            layout="@layout/item_music_left" />
+
+
+        <include
+            android:id="@+id/outMusic"
+            layout="@layout/item_music_left" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_sidebar_shadow" />
+
+</RelativeLayout>

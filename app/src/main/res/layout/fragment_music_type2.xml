@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ViewStub xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:visibility="visible"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentNetMusicType"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_music_musicplay"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y140">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x50"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_music_back" />
+
+
+        <ImageView
+            android:id="@+id/privateFm"
+            android:layout_width="@dimen/x164"
+            android:layout_height="@dimen/y54"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x50"
+            android:background="@drawable/btn_musiclibrary_privatefm" />
+
+        <ImageView
+            android:id="@+id/collectionList"
+            android:layout_width="@dimen/x164"
+            android:layout_height="@dimen/y54"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_toLeftOf="@+id/privateFm"
+            android:background="@drawable/btn_musiclibrary_collectionlist" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginLeft="@dimen/x80"
+        android:gravity="center_vertical"
+        android:text="语种"
+        android:textColor="#99ffffff"
+        android:textSize="24px" />
+
+    <include layout="@layout/layout_line_aaaaaa" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/languageList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x50"
+        android:paddingRight="@dimen/x50" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginLeft="@dimen/x80"
+        android:layout_marginTop="@dimen/y25"
+        android:gravity="center_vertical"
+        android:text="风格"
+        android:textColor="#99ffffff"
+        android:textSize="24px" />
+
+    <include layout="@layout/layout_line_aaaaaa" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/typeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x62"
+        android:paddingRight="@dimen/x62" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginLeft="@dimen/x80"
+        android:layout_marginTop="@dimen/y45"
+        android:gravity="center_vertical"
+        android:text="情感"
+        android:textColor="#99ffffff"
+        android:textSize="24px" />
+
+    <include layout="@layout/layout_line_aaaaaa" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/emotionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x62"
+        android:paddingRight="@dimen/x62" />
+
+</LinearLayout><!--</ViewStub>-->

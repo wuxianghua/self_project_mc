@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="120px"
+    android:layout_height="140px"
+    tool:background="@drawable/bg_music_musicplay">
+
+    <LinearLayout
+        android:id="@+id/ll_un_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_un_select"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_music_leftbar_musicplay_normal" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:text="网络音乐"
+            android:textColor="@color/color_99ffffff"
+            android:textSize="20px" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rl_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|center_vertical"
+        android:background="@color/color_1e4765"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_music_leftbar_musicplay_selected" />
+    </FrameLayout>
+</FrameLayout>

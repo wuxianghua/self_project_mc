@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x960"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_music_musicplay"
+    android:orientation="horizontal">
+
+    <net.imoran.auto.music.widgets.LeftTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="120px"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" />
+
+
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/tabLayout" />
+
+    <View
+        android:id="@+id/lineH"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentTop="true"
+        android:background="#1ab5c3d9" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="4px"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lineH"
+        android:layout_toRightOf="@+id/tabLayout"
+        android:background="#0dffffff" />
+</RelativeLayout>

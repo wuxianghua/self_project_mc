@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.imoran.auto.music.widgets.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y70"
+    tools:background="@drawable/bg_music_musicplay">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/x32"
+                android:layout_height="@dimen/y32"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x28">
+
+                <ImageView
+                    android:id="@+id/ivPlaying"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tv_music_play_animation" />
+
+                <TextView
+                    android:id="@+id/tvNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/color_99ffffff"
+                    android:textSize="20px"
+                    tools:text="1" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvSongName"
+                android:layout_width="@dimen/x300"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/color_99ffffff"
+                android:textSize="24px"
+                tools:text="心中的日月" />
+
+            <TextView
+                android:id="@+id/tvSingerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/color_99ffffff"
+                android:textSize="20px"
+                tools:text="未知歌手" />
+
+            <TextView
+                android:id="@+id/tvSongTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x40"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/color_99ffffff"
+                android:textSize="20px"
+                tools:text="03:40" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_alignParentBottom="true"
+            android:background="#1affffff" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="170px"
+        android:layout_height="match_parent"
+        android:background="#b50b0e"
+        android:text="取消收藏"
+        android:textColor="@color/color_ffffff"
+        android:textSize="20px" />
+</net.imoran.auto.music.widgets.SwipeMenuLayout>

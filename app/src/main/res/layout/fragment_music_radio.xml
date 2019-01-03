@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@drawable/bg_music_musicplay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y240"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_marginRight="@dimen/x60"
+        android:layout_marginTop="@dimen/y124"
+        android:background="@drawable/shape_music_radio_bg"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x60">
+
+            <TextView
+                android:id="@+id/fm"
+                android:layout_width="@dimen/x100"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_radio_fm"
+                android:gravity="center"
+                android:text="FM"
+                android:textColor="@drawable/selector_music_radio_fm_am_color"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/am"
+                android:layout_width="@dimen/x100"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_radio_am"
+                android:gravity="center"
+                android:text="AM"
+                android:textColor="@drawable/selector_music_radio_fm_am_color"
+                android:textSize="30px" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/x260"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_music_fm_am_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/radioValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="40px"
+                    tools:text="FM100.4" />
+
+                <ImageView
+                    android:id="@+id/radioStar"
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/y40"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_toRightOf="@+id/radioValue"
+                    android:background="@drawable/selector_radio_star" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y105"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/bg_miusic_transceiver_indicator" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y140"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y56">
+
+        <RelativeLayout
+            android:id="@+id/leftRadio"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x48"
+            android:background="@drawable/ic_music_transceiver_last" />
+
+        <RelativeLayout
+            android:id="@+id/rlRadioState"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/y140"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/leftRadio"
+            android:background="@drawable/selector_radio_play_state" />
+
+
+        <RelativeLayout
+            android:id="@+id/rightRadio"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x48"
+            android:layout_toRightOf="@+id/rlRadioState"
+            android:background="@drawable/ic_music_transceiver_next" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y70"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/y2"
+            android:background="#99ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:text="我喜欢的"
+            android:textColor="#99ffffff"
+            android:textSize="20sp" />
+
+
+        <View
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/y2"
+            android:background="#99ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y272"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/radioLikeOne"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y60"
+            android:layout_marginTop="@dimen/y56"
+            android:paddingLeft="@dimen/x70">
+
+            <include layout="@layout/layout_item_radio_star" />
+
+            <include layout="@layout/layout_item_radio_star" />
+
+            <include layout="@layout/layout_item_radio_star" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radioLikeTwo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y60"
+            android:layout_marginTop="@dimen/y40"
+            android:paddingLeft="@dimen/x70">
+
+            <include layout="@layout/layout_item_radio_star" />
+
+            <include layout="@layout/layout_item_radio_star" />
+
+            <include layout="@layout/layout_item_radio_star" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

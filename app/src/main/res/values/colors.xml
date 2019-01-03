@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_4dffffff">#4dffffff</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_33ffffff">#33ffffff</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#01ffffff</color>
+    <color name="color_4d135d91">#4d135d91</color>
+    <color name="color_left_bg">#1e4765</color>
+    <color name="color_progress_music">#448aca</color>
+
+    <color name="color_turn_page">#1affffff</color>
+    <color name="color_turn_page_selected">#505050</color>
+
+
+    <color name="color_play_list">#4dffffff</color>
+    <color name="color_play_list_2">#99ffffff</color>
+    <color name="color_play_list_selected">#ffffff</color>
+
+    <color name="color_play_top_line">#1ab5c3d9</color>
+
+    <color name="color_radio_rm_am">#4dffffff</color>
+    <color name="color_radio_rm_am_selected">#ffffff</color>
+
+
+    <color name="color_99ffffff">#99ffffff</color>
+    <color name="color_1e4765">#1e4765</color>
+</resources>

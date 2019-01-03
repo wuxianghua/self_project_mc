@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Theme.AppStartLoadTranslucent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="SearchEditTextStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColorHighlight">@color/color_4d135d91</item>
+        <item name="android:textCursorDrawable">@drawable/shape_input_cusor</item>
+        <item name="android:textSelectHandle">@drawable/ic_search_nonius</item>
+        <item name="android:textSelectHandleLeft">@drawable/ic_search_nonius</item>
+        <item name="android:textSelectHandleRight">@drawable/ic_search_nonius </item>
+    </style>
+
+</resources>

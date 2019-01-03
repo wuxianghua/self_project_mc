@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+adb root
+adb shell mount -o rw,remount /system
+mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/mor-music.apk
+adb push app/build/outputs/apk/debug/mor-music.apk /flysystem/app/

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/y60"
+    tools:background="@drawable/bg_music_musicplay">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y60">
+
+        <TextView
+            android:id="@+id/searchKeyword"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y40"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_item_music_type"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:singleLine="true"
+            android:textColor="#99ffffff"
+            android:textSize="20px"
+            tools:text="刘若英" />
+
+        <View
+            android:id="@+id/viewMargin"
+            android:layout_width="16px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/searchKeyword"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+git add .
+<<<<<<< HEAD
+git commit -am "发布OTA"
+=======
+git commit -am "fix bug"
+>>>>>>> music2.1
+git push

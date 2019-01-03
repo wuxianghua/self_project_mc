@@ -1,0 +1,14 @@
+### 【音乐相关】
+#music,searching,song,*,-,net.imoran.auto.action.music
+#music,listening,song,*,-,net.imoran.auto.action.music
+#radio,searching,audio_album,*,-,net.imoran.auto.action.music
+#radio,listening,broadcast,*,-,net.imoran.auto.action.music
+#radio,listening,audio_program,*,-,net.imoran.auto.action.music
+#news,listening,leting_news,*,-,net.imoran.auto.action.music
+
+music,searching,song,*,net.imoran.auto.music.ui.fragment.net.NetPlayFragment,net.imoran.auto.action.music
+music,listening,song,*,net.imoran.auto.music.ui.fragment.net.NetPlayListFragment,net.imoran.auto.action.musi
+radio,searching,audio_album,*,net.imoran.auto.music.ui.fragment.sound.SoundAlbumListFragment,net.imoran.auto.action.music
+radio,listening,audio_program,*,net.imoran.auto.music.ui.fragment.sound.SoundPlayFragment,net.imoran.auto.action.music
+news,listening,leting_news,*,net.imoran.auto.music.ui.fragment.sound.SoundPlayFragment,net.imoran.auto.action.music
+radio,listening,broadcast,*,net.imoran.auto.music.ui.fragment.radio.RadioPlayFragment,net.imoran.auto.action.music
